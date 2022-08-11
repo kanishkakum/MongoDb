@@ -76,3 +76,7 @@ data1= [
 db= client['mongoTest']
 collection = db["Json"]
 collection.insert_many(data1)
+
+record = collection.find()
+for i in record:
+	print(i)
